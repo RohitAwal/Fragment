@@ -1,20 +1,24 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="400dp"
     android:background="@color/colorPrimary"
-    tools:context="Fragment.SecondFragment">
+    tools:context="Fragment.SecondFragment"
+    android:orientation="vertical">
 
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_gravity="center"
+        android:id="@+id/etRadius"
         android:gravity="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:text="Welcome to Second Fragment "
-        />
+        android:layout_margin="10dp"
+        android:hint="Enter Radius"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAreaOfCircle"
+        android:layout_margin="10dp"
+        android:text="Area of Circle"/>
 
-
-</FrameLayout>
+</LinearLayout>

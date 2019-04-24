@@ -8,8 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 import Fragment.FirstFragment;
+import Fragment.SecondFragment;
 
-public abstract class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button btnFragment;
     private Boolean status = true;
     @Override
@@ -28,11 +29,23 @@ public abstract class MainActivity extends AppCompatActivity implements View.OnC
         if (status){
             FirstFragment firstFragment = new FirstFragment();
             fragmentTransaction.add(R.id.fragmentContainer,firstFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
             btnFragment.setText("Load Second Fragment");
-
+            status=false;
+        }
+        else {
+            SecondFragment secondFragment = new SecondFragment();
+            fragmentTransaction.add(R.id.fragmentContainer,secondFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+            btnFragment.setText("Load first fragment");
+            status=true;
         }
 
 
     }
+
+
 }
