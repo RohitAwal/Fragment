@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etPrincple" type="id" />
+    <item name="etRate" type="id" />
+    <item name="etTime" type="id" />
+    <item name="btnInterest" type="id" />
+</resources>

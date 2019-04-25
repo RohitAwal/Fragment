@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context="Fragment.FirstFragment">
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPrincple"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:hint="Enter Princple"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRate"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:hint="Enter Rate"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTime"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:hint="Enter Time"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInterest"
+        android:layout_margin="10dp"
+        android:text="Calculate"/>
+
+
+
+</LinearLayout>
